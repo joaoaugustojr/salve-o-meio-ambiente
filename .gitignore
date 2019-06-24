@@ -1,0 +1,13 @@
+Builds/
+
+GAME DESIGN/
+
+.vs/
+Library/
+obj/
+Packages/
+ProjectSettings/
+.collabignore
+*.csproj
+*.sln
+

@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: af52d32566a4f8d4dae5ca0689ec118e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: CABECA
+    21300002: OLHOS_PISCANDO
+    21300004: OLHOS_ABERTOS
+    21300006: OLHOS_FECHADOS
+    21300008: CORPO
+    21300010: PERNA_DIREITA
+    21300012: PERNA_ESQUERA
+    21300014: BRACO_DIREITO
+    21300016: BRACO_ESQUERDO
+    21300018: MAO_DIREITA
+    21300020: MAO_ESQUERDA
+    21300022: PE_DIREITO
+    21300024: PE_ESQUERDO
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CABECA
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 381
+        width: 137
+        height: 139
+      alignment: 9
+      pivot: {x: 0.49585986, y: 0.0347896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f52c8baf4a1b5546bfd06960c65515f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OLHOS_PISCANDO
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 412
+        width: 55
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b0e427c3d57d048afc878b4a8c5e86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OLHOS_ABERTOS
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 416
+        width: 55
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51335c007fd5f34685ddb8711803a91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OLHOS_FECHADOS
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 424
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd65d5959630ad45b5b7a967a5c2bb1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CORPO
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 212
+        width: 55
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a14a58c7c78a084fafe5b7a7d237b7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PERNA_DIREITA
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 253
+        width: 30
+        height: 53
+      alignment: 9
+      pivot: {x: 0.48109335, y: 0.89599204}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31969b5156b8004aa1b5b02408f5f25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PERNA_ESQUERA
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 252
+        width: 31
+        height: 53
+      alignment: 9
+      pivot: {x: 0.50000197, y: 0.92809886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9340c77e366448c489e159262211e4a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRACO_DIREITO
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 252
+        width: 19
+        height: 41
+      alignment: 9
+      pivot: {x: 0.44029477, y: 0.9288821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffff1eabf8281aa40bc2a0576c2b7577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BRACO_ESQUERDO
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 252
+        width: 19
+        height: 41
+      alignment: 9
+      pivot: {x: 0.44029477, y: 0.942717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979061e0c9f0ec3429165ce58c9ab42f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MAO_DIREITA
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 209
+        width: 21
+        height: 38
+      alignment: 9
+      pivot: {x: 0.60804385, y: 0.94781494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798064ed15c09ad499ab454034fc65db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MAO_ESQUERDA
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 207
+        width: 21
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5540248, y: 0.9508761}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37b599b7fa9f1e4b80c9763d7c40472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PE_DIREITO
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 202
+        width: 32
+        height: 39
+      alignment: 9
+      pivot: {x: 0.32274246, y: 0.907243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91918ac7fe1bee4fb6bac8d9aa203fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PE_ESQUERDO
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 201
+        width: 31
+        height: 38
+      alignment: 9
+      pivot: {x: 0.353618, y: 0.9478145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f492a49c65e12409a109dcd91c9586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7bd36d070ff0e504d9070a0b0ae9d83a
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
