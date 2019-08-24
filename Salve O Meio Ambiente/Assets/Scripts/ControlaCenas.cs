@@ -5,12 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ControlaCenas : MonoBehaviour
 {
-
     public string nomeDaCena;
     public int tempoMaximo = 0;
     private int tempo = 0;
 
-    // Update is called once per frame
     void Update()
     {
 

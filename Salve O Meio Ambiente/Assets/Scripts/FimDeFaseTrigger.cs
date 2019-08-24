@@ -8,7 +8,6 @@ public class FimDeFaseTrigger : MonoBehaviour {
     {
         if (collision.CompareTag("Player"))
         {
-            //.Log("Player Colidiu com o fim!!");
             LevelController.levelController.AtivarMenuFimDeFase();
         }
     }

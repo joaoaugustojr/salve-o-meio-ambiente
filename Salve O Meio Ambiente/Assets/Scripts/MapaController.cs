@@ -5,17 +5,13 @@ using UnityEngine.UI;
 
 public class MapaController : MonoBehaviour
 {
-
     private int[] pontuacao;
     private bool[] lockFases;
-
     public GameObject[] stars;
     public GameObject[] menusInativos;
     public GameObject[] menusAtivos;
-
     public Color corHabilitada = new Color(255, 255, 255, 255);
 
-    // Use this for initialization
     void Awake()
     {
         pontuacao = LevelController.levelController.LoadGame();
@@ -23,7 +19,6 @@ public class MapaController : MonoBehaviour
 
         DesbloqueiaFases();
         IniciaMapa();
-        //PrintDados();
     }
 
     public void PrintDados()
@@ -53,7 +48,6 @@ public class MapaController : MonoBehaviour
         {
             if (pontuacao[i] == 0)
             {
-                //Debug.Log("ZERO ESTRELA");
             }
 
             if (pontuacao[i] == 1)

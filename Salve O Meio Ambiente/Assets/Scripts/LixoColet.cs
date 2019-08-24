@@ -9,7 +9,6 @@ public class LixoColet : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            //Debug.Log("Player Colidiu com lixo!!");
             gameObject.SetActive(false);
             LevelController.levelController.coletaLixo();
         }

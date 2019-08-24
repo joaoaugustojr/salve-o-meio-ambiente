@@ -5,10 +5,8 @@ using UnityEngine.UI;
 
 public class PlayController : MonoBehaviour
 {
-
     #region VARIAVEIS
 
-    //DECLARACAO DE VARIAVEIS PUBLICAS
     [Header("CONFIGURACOES DO JOGADOR")]
     public float forcaMovimento = 5;
     public float velocidademaxima = 5;
@@ -38,7 +36,6 @@ public class PlayController : MonoBehaviour
 
     #endregion
 
-    // USADO NA INICIALIZACAO DO JOGO
     void Start()
     {
         jogador = GetComponent<Rigidbody2D>();
@@ -47,7 +44,6 @@ public class PlayController : MonoBehaviour
         sBar = tempoVelocidadeUI.GetComponent<Scrollbar>();
     }
 
-    // USADO DURANTE O JOGO
     void Update()
     {
         estaNoChao = Physics2D.OverlapCircle(baseChao.position, 0.2f, layerChao);
@@ -59,21 +55,17 @@ public class PlayController : MonoBehaviour
         }
     }
 
-    // USADO DURANTE O JOGO PARA EDITAR A FISICA DO JOGO
     private void FixedUpdate()
     {
-        //verificando se o jogador esta vivo
         if (estaVivo)
         {
 
             animacao.SetFloat("Speed", jogador.velocity.x);
 
-            //se estiver vivo movimenta o jogador
             jogador.AddForce(Vector2.right * forcaHorizontal * forcaMovimento);
 
             if (jogador.velocity.x > velocidademaxima)
             {
-                // limitar a velocidade para velocidade maxima
                 jogador.velocity = new Vector2(Mathf.Sign(jogador.velocity.x) * velocidademaxima, jogador.velocity.y);
             }
 
@@ -86,7 +78,6 @@ public class PlayController : MonoBehaviour
 
             if (coletando)
             {
-                //Debug.Log("entrei em espera");
                 StartCoroutine(espera());
             }
             else

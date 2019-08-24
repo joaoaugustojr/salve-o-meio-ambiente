@@ -9,7 +9,6 @@ public class DialogControlle : MonoBehaviour {
     public Text nome, descricao;
     public GameObject dialogUI;
 
-	// Use this for initialization
 	void Start () {
         palavras = new Queue<string>();
 	}
@@ -33,7 +32,6 @@ public class DialogControlle : MonoBehaviour {
     {
         if (palavras.Count == 0)
         {
-            //Debug.Log("Fim do Dialogo");
             Time.timeScale = 1;
             dialogUI.SetActive(false);
         } else

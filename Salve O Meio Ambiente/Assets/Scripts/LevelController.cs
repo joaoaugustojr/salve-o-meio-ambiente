@@ -38,7 +38,7 @@ public class LevelController : MonoBehaviour
     public GameObject estrela1, estrela2, estrela3;
     public GameObject audioBackgroud;
     public AudioClip audioColetaLixo, audioGameOver;
-    public Color corHabilitada = new Color(255,255,255,255);
+    public Color corHabilitada = new Color(255, 255, 255, 255);
 
     #endregion
 
@@ -53,13 +53,9 @@ public class LevelController : MonoBehaviour
             Destroy(gameObject);
         }
 
-        //File.Delete("playerInfoGame.dat");
-
         filePath = Application.persistentDataPath + "/playerInfoGame.dat";
-        //FileUtil.DeleteFileOrDirectory(filePath);
-
         audioSource = gameObject.GetComponent<AudioSource>();
-        
+
         selecionaJogador();
 
         if (!File.Exists(filePath))
@@ -99,7 +95,6 @@ public class LevelController : MonoBehaviour
             else
             {
                 tempo++;
-                //Debug.Log(tempo);
             }
 
         }
@@ -193,83 +188,81 @@ public class LevelController : MonoBehaviour
         string fase = SceneManager.GetActiveScene().name;
         int[] maxEstrelas = LoadGame();
 
-
         BinaryFormatter bf = new BinaryFormatter(); //escreve dados no arquivo
         FileStream fso = File.Open(filePath, FileMode.Open);
         PlayerData playerData = (PlayerData)bf.Deserialize(fso);
         fso.Close();
 
-        if (fase == "Fase01")
+        switch (fase)
         {
-            if (estrelas > maxEstrelas[0])
-            {
-                playerData.maxPontuacao[0] = estrelas;
-                //Debug.Log("Pontuacao Atualizada!");
-                if (estrelas >= 2)
+            case "Fase01":
+                if (estrelas > maxEstrelas[0])
                 {
-                    playerData.lockFase[1] = false;
+                    playerData.maxPontuacao[0] = estrelas;
+                    //Debug.Log("Pontuacao Atualizada!");
+                    if (estrelas >= 2)
+                    {
+                        playerData.lockFase[1] = false;
+                    }
                 }
-            }  
-        }
-        else if (fase == "Fase02")
-        {
-            if (estrelas > maxEstrelas[1])
-            {
-                playerData.maxPontuacao[1] = estrelas;
-                //Debug.Log("Pontuacao Atualizada!");
-                if (estrelas >= 2)
+                break;
+            case "Fase02":
+                if (estrelas > maxEstrelas[1])
                 {
-                    playerData.lockFase[2] = false;
+                    playerData.maxPontuacao[1] = estrelas;
+                    //Debug.Log("Pontuacao Atualizada!");
+                    if (estrelas >= 2)
+                    {
+                        playerData.lockFase[2] = false;
+                    }
                 }
-            }
-        }
-        else if (fase == "Fase03")
-        {
-            if (estrelas > maxEstrelas[2])
-            {
-                playerData.maxPontuacao[2] = estrelas;
-                //Debug.Log("Pontuacao Atualizada!");
-                if (estrelas >= 2)
+                break;
+            case "Fase03":
+                if (estrelas > maxEstrelas[2])
                 {
-                    playerData.lockFase[3] = false;
+                    playerData.maxPontuacao[2] = estrelas;
+                    //Debug.Log("Pontuacao Atualizada!");
+                    if (estrelas >= 2)
+                    {
+                        playerData.lockFase[3] = false;
+                    }
                 }
-            }
-        }
-        else if (fase == "Fase04")
-        {
-            if (estrelas > maxEstrelas[3])
-            {
-                playerData.maxPontuacao[3] = estrelas;
-                //Debug.Log("Pontuacao Atualizada!");
-                if (estrelas >= 2)
+                break;
+            case "Fase04":
+                if (estrelas > maxEstrelas[3])
                 {
-                    playerData.lockFase[4] = false;
+                    playerData.maxPontuacao[3] = estrelas;
+                    //Debug.Log("Pontuacao Atualizada!");
+                    if (estrelas >= 2)
+                    {
+                        playerData.lockFase[4] = false;
+                    }
                 }
-            }
-        }
-        else if (fase == "Fase05")
-        {
-            if (estrelas > maxEstrelas[4])
-            {
-                playerData.maxPontuacao[4] = estrelas;
-                //Debug.Log("Pontuacao Atualizada!");
-                if (estrelas >= 2)
+                break;
+            case "Fase05":
+                if (estrelas > maxEstrelas[4])
                 {
-                    playerData.lockFase[5] = false;
+                    playerData.maxPontuacao[4] = estrelas;
+                    //Debug.Log("Pontuacao Atualizada!");
+                    if (estrelas >= 2)
+                    {
+                        playerData.lockFase[5] = false;
+                    }
                 }
-            }
-        }
-        else if (fase == "Fase06")
-        {
-            if (estrelas > maxEstrelas[5])
-            {
-                playerData.maxPontuacao[5] = estrelas;
-                //Debug.Log("Pontuacao Atualizada!");
-                /*if (estrelas >= 2)
+                break;
+            case "Fase06":
+                if (estrelas > maxEstrelas[5])
                 {
-                    playerData.lockFase[5] = true;
-                }*/
-            }
+                    playerData.maxPontuacao[5] = estrelas;
+                    //Debug.Log("Pontuacao Atualizada!");
+                    /*if (estrelas >= 2)
+                    {
+                        playerData.lockFase[5] = true;
+                    }*/
+                }
+                break;
+            default:
+                break;
         }
 
         FileStream fs = File.Create(filePath);
@@ -280,7 +273,7 @@ public class LevelController : MonoBehaviour
     public int[] LoadGame()
     {
         int[] pontuacaoSalva = new int[6];
-        
+
 
         if (File.Exists(filePath))
         {
@@ -290,7 +283,6 @@ public class LevelController : MonoBehaviour
             PlayerData playerData = (PlayerData)bf.Deserialize(fs);
             fs.Close();
 
-            //Debug.Log("Pontuacao Salva: " + playerData.maxPontuacao);
             pontuacaoSalva = playerData.maxPontuacao;
         }
 
@@ -299,7 +291,6 @@ public class LevelController : MonoBehaviour
 
     public bool[] GetLockScenes()
     {
-
         bool[] locks = new bool[6];
 
         if (File.Exists(filePath))
@@ -311,7 +302,6 @@ public class LevelController : MonoBehaviour
             fs.Close();
 
             locks = playerData.lockFase;
-
         }
 
         return locks;

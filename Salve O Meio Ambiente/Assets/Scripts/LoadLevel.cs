@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LoadLevel : MonoBehaviour {
-
+    
     public string nomeLevel;
     public GameObject loadScreen;
     private Scrollbar sBar;
