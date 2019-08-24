@@ -10,4 +10,10 @@ ProjectSettings/
 .collabignore
 *.csproj
 *.sln
+Logs/
+Temp/
+*.gitgnore
+GAME ASSETS.rar
+*.idea
+
 
