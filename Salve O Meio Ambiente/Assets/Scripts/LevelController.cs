@@ -254,11 +254,9 @@ public class LevelController : MonoBehaviour
                 if (estrelas > maxEstrelas[5])
                 {
                     playerData.maxPontuacao[5] = estrelas;
-                    //Debug.Log("Pontuacao Atualizada!");
-                    /*if (estrelas >= 2)
-                    {
-                        playerData.lockFase[5] = true;
-                    }*/
+                    //desabilitar proxima fase
+                    //colocar msg final de jogo
+                    //voltar para escolha de personagens
                 }
                 break;
             default:
