@@ -33,7 +33,7 @@ public class LevelController : MonoBehaviour
 
     public Text pontuacaoText, pontuacaoMaxText;
     public GameObject gameoverPainel;
-    public GameObject lataDeLixoUI, fimDeFaseUI;
+    public GameObject lataDeLixoUI, fimDeFaseUI, proximaFaseUI;
     public GameObject play1, play2, play3, play4;
     public GameObject estrela1, estrela2, estrela3;
     public GameObject audioBackgroud;
@@ -193,6 +193,8 @@ public class LevelController : MonoBehaviour
         PlayerData playerData = (PlayerData)bf.Deserialize(fso);
         fso.Close();
 
+        proximaFaseUI.SetActive(false);
+
         switch (fase)
         {
             case "Fase01":
@@ -203,7 +205,13 @@ public class LevelController : MonoBehaviour
                     if (estrelas >= 2)
                     {
                         playerData.lockFase[1] = false;
+                        proximaFaseUI.SetActive(true);
+
                     }
+                }
+                if (maxEstrelas[0] >= 2)
+                {
+                    proximaFaseUI.SetActive(true);
                 }
                 break;
             case "Fase02":
@@ -216,6 +224,10 @@ public class LevelController : MonoBehaviour
                         playerData.lockFase[2] = false;
                     }
                 }
+                if (maxEstrelas[1] >= 2)
+                {
+                    proximaFaseUI.SetActive(true);
+                }
                 break;
             case "Fase03":
                 if (estrelas > maxEstrelas[2])
@@ -226,6 +238,11 @@ public class LevelController : MonoBehaviour
                     {
                         playerData.lockFase[3] = false;
                     }
+
+                }
+                if (maxEstrelas[2] >= 2)
+                {
+                    proximaFaseUI.SetActive(true);
                 }
                 break;
             case "Fase04":
@@ -237,6 +254,11 @@ public class LevelController : MonoBehaviour
                     {
                         playerData.lockFase[4] = false;
                     }
+
+                }
+                if (maxEstrelas[3] >= 2)
+                {
+                    proximaFaseUI.SetActive(true);
                 }
                 break;
             case "Fase05":
@@ -248,13 +270,17 @@ public class LevelController : MonoBehaviour
                     {
                         playerData.lockFase[5] = false;
                     }
+
+                }
+                if (maxEstrelas[4] >= 2)
+                {
+                    proximaFaseUI.SetActive(true);
                 }
                 break;
             case "Fase06":
                 if (estrelas > maxEstrelas[5])
                 {
                     playerData.maxPontuacao[5] = estrelas;
-                    //desabilitar proxima fase
                     //colocar msg final de jogo
                     //voltar para escolha de personagens
                 }
